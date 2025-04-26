@@ -1,0 +1,42 @@
+import { assets, workData } from '@/assets/assets'
+import Image from 'next/image'
+import React from 'react'
+
+const Project = () => {
+  return (
+    <div className='px-30 flex flex-col gap-10 items-center'>
+      <div className="flex flex-col gap-5 items-center">
+         <p className='text-2xl font-medium'>My Portfolio</p>
+         <p className='text-5xl font-medium'>My Latest Work</p>
+         <p className='text-xl  text-center'>Welcome to my web development portfolio! Explore the collections of projects
+            showcasing my expertise in full stack web development
+         </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:grid-cols-4">
+        {
+            workData.map((item, i) => (
+                <div key={i} className="w-full h-full relative">
+                    <Image src={item.bgImage} alt='image' width={200} height={200} className='rounded-lg'/>
+                     <div className="absolute flex justify-between items-center
+                      h-[30%] w-[80%] left-[10%] top-[60%] bg-white rounded-md">
+                        <div className="flex flex-col gap-1 px-2 py-2">
+                            <p className='text-sm font-semibold'>{item.title}</p>
+                            <p className='text-sm'>{item.description}</p>
+                        </div>
+                        <div className="px-2">
+                             <Image src={assets.send_icon} alt='icon' className='w-5 h-5'/>
+                        </div>
+                     </div>
+                </div>
+            ))
+        }
+      </div>
+      <div className="">
+        <button className='flex items-center gap-3 px-5 py-2 border-slate-500 border-[1px] rounded-full
+        '>show more <Image src={assets.right_arrow} alt='icon' className='w-5 h-3'/></button>
+      </div>
+    </div>
+  )
+}
+
+export default Project
