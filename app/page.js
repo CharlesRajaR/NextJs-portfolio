@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar.js";
 import About from "./components/About.js";
 import Home from "./components/Home.js";
 import Project from "./components/Project.js";
+import Contact from "./components/Contact.js";
+import Footer from "./components/Footer.js";
 
 export default function App() {
   return (
@@ -18,6 +20,12 @@ export default function App() {
         </div>
         <div className="">
           <Project/>
+        </div>
+        <div className="">
+          <Contact/>
+        </div>
+        <div className="">
+          <Footer/>
         </div>
      </div>
     </>
