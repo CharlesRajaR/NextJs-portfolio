@@ -4,7 +4,7 @@ import React from 'react'
 
 const Project = ({darkTheme}) => {
   return (
-    <div id='project' className='px-30 flex flex-col gap-10 items-center'>
+    <div id='projects' className='px-30 flex flex-col gap-10 items-center'>
       <div className="flex flex-col gap-5 items-center">
          <p className='dark:text-amber-50 text-2xl font-medium'>My Portfolio</p>
          <p className='dark:text-amber-50 text-5xl font-medium'>My Latest Work</p>
@@ -22,11 +22,13 @@ const Project = ({darkTheme}) => {
                      <div className="absolute flex justify-between items-center group-hover:top-[50%]
                       h-[30%] w-[80%] left-[10%] top-[60%] bg-white rounded-md">
                         <div className="flex flex-col gap-1 px-2 py-2">
-                            <p className='text-sm font-semibold'>{item.title}</p>
-                            <p className='text-sm'>{item.description}</p>
+                            <p className='text-xs font-semibold'>{item.title}</p>
+                            <p className='text-xs'>{item.description}</p>
                         </div>
                         <div className="px-2 cursor-pointer">
-                             <Image src={assets.send_icon} alt='icon' className='w-5 h-5'/>
+                            <a href={item.path} target='_blank'>
+                               <Image src={assets.send_icon} alt='icon' className='w-5 h-5'/>
+                            </a>
                         </div>
                      </div>
                 </div>
@@ -34,7 +36,12 @@ const Project = ({darkTheme}) => {
         }
       </div>
       <div className="">
-        <button className='flex dark:text-amber-100 cursor-pointer 
+        <button onClick={() => {
+               if (typeof window !== "undefined") {
+               window.open("https://github.com/CharlesRajaR", "_blank");
+               }
+             }}
+         className='flex dark:text-amber-100 cursor-pointer 
          items-center gap-3 px-5 py-2 border-slate-500 border-[1px] rounded-full
         '>show more <Image src={darkTheme ? assets.right_arrow_bold_dark :assets.right_arrow} alt='icon' className='w-5 h-3'/></button>
       </div>

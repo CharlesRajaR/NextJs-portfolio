@@ -80,24 +80,28 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Full Stack Project',
+        description: 'food ordering website',
         bgImage: '/work-1.png',
+        path:'https://github.com/CharlesRajaR/Food_Ordering_Website_Backend'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Full Stack Project',
+        description: 'Ecommerce website',
         bgImage: '/work-2.png',
+        path:'https://github.com/CharlesRajaR/Advanced_Ecommerce_Website_Frontend'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Frontend Website',
+        description: 'Portfolio',
         bgImage: '/work-3.png',
+        path:'https://github.com/CharlesRajaR/NextJs-portfolio'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'IOT Project',
+        description: 'Water Quality Analyser',
         bgImage: '/work-4.png',
+        path:'https://github.com/CharlesRajaR/Water-Level-And-Water-Quality-Monitoring-System-IOT'
     },
 ]
 

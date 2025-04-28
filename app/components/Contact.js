@@ -28,7 +28,7 @@ const Contact = ({darkTheme}) => {
       }
 
   return (
-    <div className='flex flex-col px-30 items-center gap-20'>
+    <div id='contact' className='flex flex-col px-30 items-center gap-20'>
         <div className="flex flex-col gap-5 items-center">
            <p className='text-xl dark:text-amber-50 font-medium'>Connect with me</p>
            <p className='text-5xl dark:text-amber-50 font-medium'>Get in touch</p>
