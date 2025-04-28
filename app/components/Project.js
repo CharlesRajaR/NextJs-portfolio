@@ -4,11 +4,11 @@ import React from 'react'
 
 const Project = ({darkTheme}) => {
   return (
-    <div id='projects' className='px-30 flex flex-col gap-10 items-center'>
+    <div id='projects' className='px-20 md:px-30 flex flex-col gap-5 md:gap-10 items-center'>
       <div className="flex flex-col gap-5 items-center">
-         <p className='dark:text-amber-50 text-2xl font-medium'>My Portfolio</p>
-         <p className='dark:text-amber-50 text-5xl font-medium'>My Latest Work</p>
-         <p className='dark:text-amber-50 text-xl  text-center'>Welcome to my web development portfolio! Explore the collections of projects
+         <p className='dark:text-amber-50 text-xl md:text-2xl font-medium'>My Portfolio</p>
+         <p className='dark:text-amber-50 text-2xl md:text-5xl font-medium'>My Latest Work</p>
+         <p className='dark:text-amber-50 text-sm md:text-3xl  text-center'>Welcome to my web development portfolio! Explore the collections of projects
             showcasing my expertise in full stack web development
          </p>
       </div>
@@ -41,8 +41,8 @@ const Project = ({darkTheme}) => {
                window.open("https://github.com/CharlesRajaR", "_blank");
                }
              }}
-         className='flex dark:text-amber-100 cursor-pointer 
-         items-center gap-3 px-5 py-2 border-slate-500 border-[1px] rounded-full
+         className='flex dark:text-amber-100 cursor-pointer text-sm dark:hover:shadow-amber-50 dark:hover:shadow-sm md:text-xl
+         items-center gap-3 px-5 py-2 border-slate-500 border-[1px] rounded-full transition duration-300
         '>show more <Image src={darkTheme ? assets.right_arrow_bold_dark :assets.right_arrow} alt='icon' className='w-5 h-3'/></button>
       </div>
     </div>

@@ -33,7 +33,7 @@ export default function App() {
   
   return (
     <>
-     <div className="flex flex-col gap-40 dark:bg-violet-950 w-full">
+     <div className="flex flex-col gap-20 md:gap-40 dark:bg-slate-900 w-full">
         <div className="">
           <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme}/>
         </div>
