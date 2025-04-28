@@ -3,7 +3,7 @@ import { assets } from '@/assets/assets';
 import Image from 'next/image';
 import React from 'react'
 
-const Contact = () => {
+const Contact = ({darkTheme}) => {
     async function handleSubmit(event) {
           event.preventDefault();
           const formData = new FormData(event.target);
@@ -30,15 +30,15 @@ const Contact = () => {
   return (
     <div className='flex flex-col px-30 items-center gap-20'>
         <div className="flex flex-col gap-5 items-center">
-           <p className='text-xl font-medium'>Connect with me</p>
-           <p className='text-5xl font-medium'>Get in touch</p>
-           <p className='text-2xl font-medium'>love to hear from you If you have any questions, comments, or feedback
+           <p className='text-xl dark:text-amber-50 font-medium'>Connect with me</p>
+           <p className='text-5xl dark:text-amber-50 font-medium'>Get in touch</p>
+           <p className='text-2xl dark:text-amber-50 font-medium'>love to hear from you If you have any questions, comments, or feedback
             Please use the form below
            </p>
         </div>
         <div className="flex items-center justify-center w-[80%] h-auto
         rounded-lg">
-        <form onSubmit={handleSubmit} className='grid grid-cols-2 gap-5'>
+        <form onSubmit={handleSubmit} className='grid grid-cols-2 text-amber-50 gap-5'>
           <input className='col-span-1 appearance-none border-[1px] border-slate-300 rounded-lg
           px-10 py-3 focus:outline-none focus:shadow-amber-50 focus:shadow-2xl' type="text"
            name="name" placeholder='Enter your name'/>

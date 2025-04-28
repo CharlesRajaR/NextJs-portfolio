@@ -2,12 +2,12 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({darkTheme}) => {
   return (
-    <div className='flex py-5 gap-5 flex-col items-center'>
+    <div className='flex py-5 dark:text-amber-50 gap-5 flex-col items-center'>
       <p className='text-2xl font-bold'>Charles Raja R</p>
       <p className='flex items-center gap-3'><Image src={assets.mail_icon} alt='mail' className='w-5 h-4'/>{" "} charlesraja822@gmail.com</p>
-       <div className='w-[80%] h-[1px] border-t-[1px] border-slate-700 px-20'></div>
+       <div className='w-[80%] h-[1px] border-t-[1px] dark:border-amber-50 border-slate-700 px-20'></div>
        <div className="flex justify-between w-[80%] items-center">
     
             <p>2025 Charles Raja R. All rights reserved</p>
