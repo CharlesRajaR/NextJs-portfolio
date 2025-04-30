@@ -25,9 +25,18 @@ const Contact = ({darkTheme}) => {
           if (result.success) {
               console.log(result);
           }
+          event.target.reset();
+
+        const successTag = document.getElementById("success-message");
+        successTag.style.display = "block";
+
+        setTimeout(() => {
+            successTag.style.display = "none";
+        }, 3000);
       }
 
-  return (
+  
+      return (
     <div id='contact' className='flex flex-col px-20 md:px-30 items-center gap-20'>
         <div className="flex flex-col text-black gap-5 items-center">
            <p className='text-sm md:text-2xl dark:text-amber-50 font-medium'>Connect with me</p>
@@ -40,13 +49,13 @@ const Contact = ({darkTheme}) => {
         rounded-lg">
         <form onSubmit={handleSubmit} className='dark:text-amber-50 text-slate-700 flex flex-col items-center w-full gap-5'>
           <div className="flex flex-col w-full md:flex-row md:justify-between gap-2 mg:gap-5">
-          <input className='appearance-none border-[1px] border-slate-300 rounded-lg text-sm
-           md:text-xl md:w-1/2
+          <input className='appearance-none border-[1px] border-slate-300 rounded-lg 
+           md:text-xl md:w-1/2 text-xs md:text-sm
           px-10 py-3 focus:outline-none focus:shadow-amber-50 focus:shadow-2xl' type="text"
            name="name" placeholder='Enter your name' required/>
 
           <input required className='appearance-none border-[1px] focus:outline-none
-           border-slate-300 rounded-lg text-sm md:text-xl md:w-1/2
+           border-slate-300 rounded-lg text-xs md:text-sm md:text-xl md:w-1/2
           px-10 py-3  focus:shadow-amber-50 focus:shadow-2xl' type="email" name="email" placeholder='Enter your email'/>
 
           </div>
@@ -61,6 +70,9 @@ const Contact = ({darkTheme}) => {
           px-5 py-3' type="submit">  Submit the form <Image src={assets.right_arrow} alt='icon'
           className='w-3 h-3 md:w-5 md:h-3'/> </button>
         </form>
+        <div id="success-message">
+
+        </div>
         </div>
     </div>
   )
