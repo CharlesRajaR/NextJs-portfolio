@@ -1,3 +1,17 @@
+import AdExcel from './AdvanceExcel.jpg';
+import AdWord from './Advanceword.jpg';
+import Aptitude from './Aptitude.jpg'
+import AdPPT from './Advanceppt.jpg';
+import Excel from './Excel.jpg';
+import Internship from './Internship.jpg';
+import SharePoint from './SharePoint.jpg';
+import Teams from './Teams.jpg';
+import UI_Path from './UI-Path.jpg';
+import Word from './Word.jpg'
+import Java from './Java.jpg';
+import outlook from './outlook.jpg';
+import PowerPoint from './Powerpoint.jpg'
+import OneDrive from './OneDrive.jpg';
 import user_image from './user-image.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
@@ -37,7 +51,28 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
+export const internship = {
+    Internship
+}
+
+export const course = [
+      {img:Java, name:"Core Java Certification", provider:"Infosys SpringBoard"},
+      {img:AdExcel, name:"Advanced Excel", provider:"Naan Mudhalvan"},
+      {img:AdWord, name:"Advanced Word", provider:"Naan Mudhalvan"}, 
+      {img:AdPPT, name:"Advanced PPT", provider:"Naan Mudhalvan"}, 
+      {img:Excel, name:"Excel", provider:"Naan Mudhalvan"}, 
+      {img:Word, name:"Word", provider:"Naan Mudhalvan"}, 
+      {img:PowerPoint, name:"PPT", provider:"Naan Mudhalvan"},
+      {img:SharePoint, name:"SharePoint", provider:"Naan Mudhalvan"},
+      {img:Teams, name:"Teams", provider:"Naan Mudhalvan"},
+      {img:outlook, name:"Outlook", provider:"Naan Mudhalvan"},
+      {img:OneDrive, name:"OneDrive", provider:"Naan Mudhalvan"},
+      {img:UI_Path, name:"UI_Path", provider:"Naan Mudhalvan"},
+      {img:Aptitude, name:"Apitude", provider:"Titan Leap"}
+]
+
 export const assets = {
+    Java,
     user_image,
     code_icon,
     code_icon_dark,

@@ -42,13 +42,13 @@ const About = ({darkTheme}) => {
           <div className="flex flex-wrap justify-start gap-2 md:gap-3">
             {
               toolsData.map((item, i) => (
-                <>
+                <div key={i}>
                 <div className="w-1/5 h-3/5  md:w-[40px] md:h-[40px] border-slate-500 flex items-center
                 justify-center border-[1px] rounded-md">
                   <Image src={item} alt='tool' className='w-[80%] h-[80%]'/>
                 </div>
                 
-                </>
+                </div>
               ))
 
               

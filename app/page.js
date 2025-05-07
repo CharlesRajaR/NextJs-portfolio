@@ -6,13 +6,14 @@ import Project from "./components/Project.js";
 import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
 import { useEffect, useState } from 'react';
+import Certificate from "./components/Certificate.js";
 
 export default function App() {
   
   const[darkTheme, setDarkTheme] = useState(true);
 
   useEffect(() => {
-     if(localStorage.theme === "dark"){
+     if(localStorage.theme === "dark"|| localStorage.theme === null){
         setDarkTheme(true)
      }
      else{
@@ -45,6 +46,9 @@ export default function App() {
         </div>
         <div className="">
           <Project darkTheme={darkTheme}/>
+        </div>
+        <div className="">
+          <Certificate/>
         </div>
         <div className="">
           <Contact darkTheme={darkTheme}/>
