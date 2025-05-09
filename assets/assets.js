@@ -1,3 +1,18 @@
+import css from './css.png';
+import html from './html.png';
+import javascript from './javascript.png';
+import typescript from './typescript.png'
+import tailwindcss from './tailwind.png';
+import react from './react.png';
+import JavaCert from './JavaCertificate.jpg';
+import merit from './merit.jpg';
+import nextjs from './nextjs.png';
+import angular from './angular.png';
+import springboot from './springboot.png';
+import mysql from './mysql.png';
+import intellij from './intellij.png';
+import ardiuno from './ardiuno.png';
+import github from './github.png';
 import AdExcel from './AdvanceExcel.jpg';
 import AdWord from './Advanceword.jpg';
 import Aptitude from './Aptitude.jpg'
@@ -56,7 +71,7 @@ export const internship = {
 }
 
 export const course = [
-      {img:Java, name:"Core Java Certification", provider:"Infosys SpringBoard"},
+      {img:JavaCert, name:"Java Certification", provider:"Infosys SpringBoard"},
       {img:AdExcel, name:"Advanced Excel", provider:"Naan Mudhalvan"},
       {img:AdWord, name:"Advanced Word", provider:"Naan Mudhalvan"}, 
       {img:AdPPT, name:"Advanced PPT", provider:"Naan Mudhalvan"}, 
@@ -73,6 +88,20 @@ export const course = [
 
 export const assets = {
     Java,
+    html,
+    css,
+    javascript,
+    typescript,
+    tailwindcss,
+    react,
+    nextjs,
+    angular,
+    springboot,
+    mysql,
+    mongodb,
+    intellij,
+    github,
+    ardiuno,
     user_image,
     code_icon,
     code_icon_dark,
@@ -112,6 +141,7 @@ export const assets = {
     right_arrow_bold,
     right_arrow_bold_dark
 };
+
 
 export const workData = [
     {
@@ -154,5 +184,9 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode,assets.intellij, assets.ardiuno, assets.github, assets.firebase,  assets.figma, assets.git
+];
+export const skills = [
+    assets.html, assets.css, assets.javascript, assets.Java, assets.typescript, assets.react, 
+    assets.nextjs,assets.angular, assets.springboot, assets.mysql, assets.mongodb
 ];

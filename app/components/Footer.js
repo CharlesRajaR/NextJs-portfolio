@@ -1,10 +1,12 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Footer = ({darkTheme}) => {
   return (
-    <div className='flex py-5 dark:text-amber-50 gap-5 flex-col items-center'>
+    <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1}}
+    className='flex py-5 dark:text-amber-50 gap-5 flex-col items-center'>
       <p className='text-xl md:text-2xl font-bold'>Charles Raja R</p>
       <p className='text-sm md:text-xl flex items-center gap-3'><Image src={assets.mail_icon} alt='mail' className='w-5 h-4'/>{" "} charlesraja822@gmail.com</p>
 
@@ -23,7 +25,7 @@ const Footer = ({darkTheme}) => {
             </div>
         
        </div>
-    </div>
+    </motion.div>
   )
 }
 

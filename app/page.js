@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar.js";
 import About from "./components/About.js";
 import Home from "./components/Home.js";
 import Project from "./components/Project.js";
-import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
 import { useEffect, useState } from 'react';
 import Certificate from "./components/Certificate.js";
@@ -50,9 +49,9 @@ export default function App() {
         <div className="">
           <Certificate/>
         </div>
-        <div className="">
+        {/* <div className="">
           <Contact darkTheme={darkTheme}/>
-        </div>
+        </div> */}
         <div className="">
           <Footer darkTheme={darkTheme}/>
         </div>
