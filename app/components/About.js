@@ -30,7 +30,8 @@ const About = ({darkTheme}) => {
         className='w-full h-full object-cover rounded-lg'/>
        </motion.div>
 
-       <div className="md:col-span-2 flex flex-col dark:text-amber-100 gap-5 md:gap-10">
+       <div className="md:col-span-2 flex flex-col
+        dark:text-amber-100 gap-5 md:gap-10">
          <motion.p initial={{ opacity: 0, y: 50 }} // The element starts off-screen (below) and invisible
   whileInView={{ opacity: 1, y: 0 }} // It fades in and moves to its original position
   transition={{ type: "spring", stiffness: 100, damping: 10 }} className='text-xl md:text-2xl text-center'>I am a full stack developer, I specialize in building responsive user friendly interfaces
@@ -39,15 +40,18 @@ const About = ({darkTheme}) => {
            I focus on creating secure, scalable and user-friendly solutions tailored to thier needs
          </motion.p>
 
-         <div className="grid grid-cols-1 gap-2 md:gap-3 dark:text-amber-100 md:grid-cols-3">
+         <div className="grid grid-cols-1 gap-2 md:gap-3 dark:text-amber-100 
+         md:grid-cols-3">
          {
           infoList.map((item, i) => (
             <motion.div initial={{opacity:0, x:-100}}
             whileInView={{opacity:1, x:0}}
             transition={{duration:0.2, ease:"easeOut"}}
-            key={i} className="flex flex-col gap-3 w-full md:w-[200px] aspect-square
+            key={i} className="flex flex-col gap-3 w-full
+             md:w-[200px] aspect-square
              border-slate-500
-            border-[1px] rounded-lg px-3 py-4 hover:-translate-y-2 transition duration-300
+            border-[1px] rounded-lg px-3 py-4 hover:-translate-y-2 transition
+             duration-300
            dark:hover:shadow-amber-50 dark:hover:shadow-lg cursor-pointer">
                 <Image src={darkTheme? item.iconDark: item.icon} alt='icon' className='w-5  h-5'/>
                 <p className='text-xl dark:text-amber-50 font-bold text-black'>{item.title}</p>
@@ -60,7 +64,7 @@ const About = ({darkTheme}) => {
          <p className='text-3xl font-semibold
           text-center md:text-2xl md:font-medium md:font-left'>Tools I Use</p>
          
-          <div className="grid grid-cols-2 space-x-5 md:space-x-3 space-y-2
+          <div className="grid w-full grid-cols-2 space-x-5 md:space-x-3 space-y-2
           md:grid-cols-7">
             {
               toolsData.map((item, i) => (

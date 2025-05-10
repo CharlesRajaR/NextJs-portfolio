@@ -2,6 +2,7 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 const Home = ({darkTheme}) => {
   return (
@@ -28,13 +29,16 @@ const Home = ({darkTheme}) => {
               FULL STACK WEBSITE DEVELOPER AND IOT DEVELOPER BASED IN INDIA</motion.p>
            </div>
            <div className="flex flex-col items-center md:flex-row gap-5">
-             <button className='bg-black text-white px-5 py-3 rounded-full  flex items-center 
-             gap-3 text-sm md:text-xl font-medium'
-             ><a href="#contact">Contact me</a><Image src={assets.right_arrow_white} alt='arrow' className='w-3 h-3 md:w-5 md:h-5'/></button>
+             <button className='bg-black text-white px-5 py-3 rounded-full 
+              flex items-center gap-3 text-sm md:text-xl font-medium hover:px-6
+               hover:py-4'
+             ><Link href="/Contact">Contact me</Link>
+             <Image src={assets.right_arrow_white} alt='arrow' className='w-3 h-3 md:w-5 md:h-5'/></button>
     
-             <a className='bg-white border-slate-700 border-[0.5px] text-black px-5 py-3 
-             rounded-full
-               flex items-center gap-3 text-sm md:text-xl' href='/sample-resume.pdf' download={true}
+             <a className='bg-white border-slate-700 border-[0.5px]
+              text-black px-5 py-3 
+             rounded-full hover:px-6 hover:py-4
+               flex items-center gap-3 text-sm md:text-xl' href='/Charles_Raja_Resume.pdf' download={true}
              >Resume <Image src={assets.download_icon} alt='arrow' className='w-3 h-3 md:w-5 md:h-5'/>
              </a>
            </div>

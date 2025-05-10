@@ -9,8 +9,9 @@ const Navbar = ({darkTheme, setDarkTheme}) => {
   
   return (
     <>
-    <nav id='home' className={`flex bg-white dark:bg-black dark:md:bg-slate-900 z-50 
-    justify-between items-center px-20 py-5 w-full fixed`} >
+    <nav id='home' className={`flex bg-white dark:bg-black
+     dark:md:bg-slate-900 z-50 top-0 left-0
+    justify-between items-center px-20 py-5 w-[100vw] fixed`} >
         <p className='text-lgs font-mono md:text-3xl font-bold cursor-pointer dark:text-slate-200
         '> <a href="#home">CHARLES RAJA R</a></p>
          <ul className={`hidden bg-no-repeat dark:hover:shadow-lg dark:shadow-amber-100
@@ -18,7 +19,7 @@ const Navbar = ({darkTheme, setDarkTheme}) => {
           border-slate-400 gap-7 items-center transition duration-300`}>
             <li><a href="#home">Home</a></li>
             <li ><a href="#about">About me</a></li>
-            {/* <li ><a href="#services">Services</a></li> */}
+           <li ><a href="#skills">SKills</a></li>
             <li ><a href="#projects">Projects</a></li>
             <li ><Link href="/Contact">Contact me</Link></li>
             
@@ -52,9 +53,9 @@ const Navbar = ({darkTheme, setDarkTheme}) => {
       flex-col gap-5 items-center'>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About me</a></li>
-            {/* <li><a href="#services">Services</a></li> */}
+            <li><a href="#skills">Skills</a></li> 
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact me</a></li>
+            <li><Link href="/Contact">Contact me</Link></li>
         </ul>
     </div>
     :""

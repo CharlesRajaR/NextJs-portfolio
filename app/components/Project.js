@@ -56,7 +56,7 @@ const Project = ({darkTheme}) => {
       </div>
 
 
-      <div className='w-[100%] flex justify-center items-center'>
+      <div id='skills' className='flex justify-center items-center'>
       <div className='flex flex-col gap-5 items-center'>
         <div className='flex flex-col gap-3'>
           <p className='dark:text-white text-2xl md:text-5xl font-medium md:font-semibold text-center'>SKILLS</p>
